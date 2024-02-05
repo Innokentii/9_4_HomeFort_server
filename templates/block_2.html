@@ -1,0 +1,32 @@
+{% extends "main.html" %}
+
+{% block main %}
+
+<link rel="stylesheet" href="/static/block_2_css.css">
+
+<div class="bot_block_cl">
+    <a href="https://snipp.ru/handbk/emoji">перечень смайликов и прочее символов</a>
+    <h2>Telegramm bot</h2>
+    <Textarea id="textarea_id"></Textarea>
+    <div class="bot_block_button_cl">
+        <div id="button_save_advert_id"><span>Save</span></div>
+        <div id="button_start_advert_id"><span>Запустит</span></div>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+<script src="/static/block_2_js.js"></script>
+
+{% endblock %}

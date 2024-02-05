@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название сайта</title>
+    <link rel="stylesheet" href="/static/main_css.css">
+    <link rel="icon" href="" type="image/x-icon">
+</head>
+<body>
+
+    <div class="_0_media_check_cl" style="display: none;">
+        <!--Указание размеров экрана-->
+        <style>
+            ._0_media_check_cl {
+                width: 150px;
+                height: 50px;
+                position: fixed;
+                top: 50px;
+                left: 50px;
+                background-color: aqua;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <div><span>Ширина-</span><span id="_0_media_width_id">0</span>px</div>
+        <div><span>Высота-</span><span id="_0_media_length_id">0</span>px</div>
+        <script>
+            // Указание размеров экрана;
+            document.getElementById('_0_media_width_id').innerText = window.innerWidth;
+            document.getElementById('_0_media_length_id').innerText = window.innerHeight;
+            window.addEventListener('resize', _ => {
+                console.log(123);
+                document.getElementById('_0_media_width_id').innerText = window.innerWidth;
+                document.getElementById('_0_media_length_id').innerText = window.innerHeight;
+            });
+        </script>
+    </div>
+
+    <div class="head_website_dempf_cl" id="head_website_dempf_id">
+        <!--Фиксированный (демпфер)-->
+    </div>
+    <div class="head_website_cl" id="head_website_id">
+        <!--Фиксированный-->
+        <div class="catalog_cl" id="catalog_id">
+            <!--каталог-->
+            <a href="/block_1">
+                <div><span>Комнаты</span></div>
+            </a>
+            <a href="/block_2">
+                <div><span>Боты</span></div>
+            </a>
+            <a href="/block_3">
+                <div><span>Отзывы</span></div>
+            </a>
+        </div>
+    </div>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer id="footer_id">
+        <div class="developer_footer_cl">
+            <!--иконка и ссылка сайта создателя-->
+            <a href="https://haskiprog.pythonanywhere.com/">
+                <span>сайт сделан:</span>
+                <img src="/static/icon_haske.png" alt="Н/Ф">
+                <b> HaskiProg</b>
+            </a>
+        </div>
+    </footer>
+
+    <script src="/static/main_js.js"></script>
+</body>
+</html>
