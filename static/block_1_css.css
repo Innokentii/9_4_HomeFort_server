@@ -1,0 +1,100 @@
+/*=================================================================================*/
+/*                             ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ                               */
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+
+
+/*=================================================================================*/
+/*                                   СТИЛИЗАЦИЯ                                    */
+/*VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV*/
+
+.rows_floors_cl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.rows_floors_cl > div {
+    border: 4px black solid;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+.bed_styling_cl {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.bed_styling_cl > div:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgb(93, 90, 90);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bed_styling_cl > div > input {
+    font-size: 24px;
+}
+
+.bed_styling_cl > div:nth-child(5) {
+    width: 80px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(84, 82, 82);
+}
+
+.bed_styling_cl > div:nth-child(5):hover {
+    cursor: pointer;
+}
+
+.bed_styling_cl > div:nth-child(5):active {
+    width: 70px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 20px;
+}
+
+/**/
+.bed_styling_cl > div:nth-child(6) {
+    width: 80px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(238, 17, 17);
+}
+
+.bed_styling_cl > div:nth-child(6):hover {
+    cursor: pointer;
+}
+
+.bed_styling_cl > div:nth-child(6):active {
+    width: 70px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    font-size: 20px;
+}
+
+.rooms_cl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
